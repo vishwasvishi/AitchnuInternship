@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Vishiteck Digital Agency</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family: 'Segoe UI', sans-serif;
+            scroll-behavior:smooth;
+        }
+
+        body{
+            line-height:1.6;
+        }
+
+        header{
+            background:#0f172a;
+            padding:15px 0;
+            position:fixed;
+            width:100%;
+            top:0;
+            z-index:1000;
+        }
+
+        nav{
+            width:90%;
+            margin:auto;
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+        }
+
+        nav h1{
+            color:white;
+            font-size:22px;
+        }
+
+        nav ul{
+            list-style:none;
+            display:flex;
+            flex-wrap:wrap;
+        }
+
+        nav ul li{
+            margin-left:20px;
+        }
+
+        nav ul li a{
+            color:white;
+            text-decoration:none;
+            font-size:14px;
+        }
+
+        nav ul li a:hover{
+            color:#38bdf8;
+        }
+
+        section{
+            padding:100px 10% 60px;
+        }
+
+        .hero{
+            height:80vh;
+            background:url("https://images.unsplash.com/photo-1492724441997-5dc865305da7") no-repeat center/cover;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            text-align:center;
+            color:white;
+        }
+
+        .hero h2{
+            font-size:45px;
+        }
+
+        .btn{
+            display:inline-block;
+            margin-top:20px;
+            padding:10px 25px;
+            background:#38bdf8;
+            color:white;
+            text-decoration:none;
+            border-radius:5px;
+        }
+
+        .services{
+            display:grid;
+            grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+            gap:20px;
+        }
+
+        .card{
+            background:#f3f4f6;
+            padding:20px;
+            border-radius:10px;
+            text-align:center;
+            transition:0.3s;
+        }
+
+        .card:hover{
+            transform:translateY(-10px);
+        }
+
+        .card img{
+            width:100%;
+            height:180px;
+            object-fit:cover;
+            border-radius:10px;
+        }
+
+        form input, form textarea{
+            width:100%;
+            padding:10px;
+            margin:10px 0;
+        }
+
+        form button{
+            padding:10px 20px;
+            background:#0f172a;
+            color:white;
+            border:none;
+        }
+
+        footer{
+            background:#0f172a;
+            color:white;
+            text-align:center;
+            padding:20px;
+        }
+
+        footer a{
+            color:#38bdf8;
+            text-decoration:none;
+            margin:0 10px;
+        }
+    .contact-container{
+        display:flex;
+        gap:30px;
+        flex-wrap:wrap;
+    }
+
+    .contact-info{
+        flex:1;
+        background:#f3f4f6;
+        padding:25px;
+        border-radius:10px;
+        box-shadow:0 5px 15px rgba(0,0,0,0.1);
+    }
+
+    .contact-info h3{
+        margin-bottom:15px;
+    }
+
+    .contact-form{
+        flex:1;
+        background:white;
+        padding:25px;
+        border-radius:10px;
+        box-shadow:0 5px 15px rgba(0,0,0,0.1);
+    }
+
+    .contact-form input,
+    .contact-form textarea{
+        width:100%;
+        padding:12px;
+        margin:10px 0;
+        border:1px solid #ccc;
+        border-radius:5px;
+    }
+
+    .contact-form button{
+        width:100%;
+        padding:12px;
+        background:#38bdf8;
+        color:white;
+        border:none;
+        border-radius:5px;
+        font-size:16px;
+        cursor:pointer;
+    }
+
+    .contact-form button:hover{
+        background:#0284c7;
+    }
+    .about-container{
+        display:flex;
+        gap:40px;
+        align-items:center;
+        flex-wrap:wrap;
+    }
+
+    .about-text{
+        flex:1;
+    }
+
+    .about-text h3{
+        margin-bottom:15px;
+        color:#0f172a;
+    }
+
+    .about-text p{
+        margin-bottom:15px;
+    }
+
+    .about-text ul{
+        list-style:none;
+    }
+
+    .about-text ul li{
+        margin:8px 0;
+    }
+
+    .about-image{
+        flex:1;
+    }
+
+    .about-image img{
+        width:100%;
+        border-radius:10px;
+        box-shadow:0 5px 15px rgba(0,0,0,0.2);
+    }
+    .container{
+    width:90%;
+    max-width:1100px;
+    margin:auto;
+}
+
+
+
+    </style>
+</head>
+<body>
+
+<header>
+<nav>
+    <h1>Vishiteck</h1>
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+</header>
+
+<section class="hero" id="home">
+    <div>
+        <h2>Innovative Digital Solutions</h2>
+        <p>Empowering Businesses with Technology</p>
+        <a href="#services" class="btn">Our Services</a>
+    </div>
+</section>
+
+<section id="about">
+    <div class="container">
+        <h2 style="text-align:center; margin-bottom:30px;">About Vishiteck</h2>
+
+        <div class="about-container">
+
+            <div class="about-text">
+                <h3>Who We Are</h3>
+                <p>
+                    Vishiteck is a forward-thinking digital agency focused on
+                    delivering innovative technology solutions for businesses.
+                    We combine creativity and technical expertise to build
+                    powerful digital experiences.
+                </p>
+
+                <ul>
+                    <li>✔ Professional Web Development</li>
+                    <li>✔ Creative Brand Design</li>
+                    <li>✔ Digital Marketing Strategies</li>
+                    <li>✔ Business Growth Consulting</li>
+                </ul>
+            </div>
+
+            <div class="about-image">
+                <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c" alt="Team Work">
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<section id="services">
+    <h2>Our Services</h2>
+
+    <div class="services">
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085">
+            <h3>Web Development</h3>
+            <p>Responsive and modern business websites.</p>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee">
+            <h3>Digital Marketing</h3>
+            <p>SEO and social media growth strategies.</p>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d">
+            <h3>Brand Design</h3>
+            <p>Creative logo and brand identity solutions.</p>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c">
+            <h3>Business Consulting</h3>
+            <p>Strategic planning for digital transformation.</p>
+        </div>
+
+    </div>
+</section>
+
+<section id="contact">
+    <h2 style="text-align:center; margin-bottom:30px;">Contact Us</h2>
+
+    <div class="contact-container">
+
+        <div class="contact-info">
+            <h3>Get in Touch</h3>
+            <p>📍 Location: Bangalore, India</p>
+            <p>📞 Phone: +91 98765 43210</p>
+            <p>📧 Email: info@vishiteck.com</p>
+            <p>🌐 Website: www.vishiteck.com</p>
+        </div>
+
+        <div class="contact-form">
+            <form>
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea rows="5" placeholder="Your Message"></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+
+    </div>
+</section>
+
+
+<footer>
+    <p>© 2026 Vishiteck Digital Agency</p>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+</footer>
+
+</body>
+</html>
