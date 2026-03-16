@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Interactive Data Dashboard</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<nav class="navbar">
+<h1>📊 Data Dashboard</h1>
+
+<label class="switch">
+<input type="checkbox" id="modeToggle">
+<span class="slider"></span>
+</label>
+
+</nav>
+
+<div class="container">
+
+<div class="card">
+<h2>👤 Random User Generator</h2>
+<button onclick="generateUser()">Generate User</button>
+<div id="userCard"></div>
+</div>
+
+<div class="card">
+<h2>🌤 Weather Search</h2>
+<input type="text" id="cityInput" placeholder="Enter city">
+<button onclick="getWeather()">Search</button>
+<div id="weatherResult"></div>
+</div>
+
+<div class="card">
+<h2>✅ To-Do List</h2>
+<input type="text" id="taskInput" placeholder="Add task">
+<button onclick="addTask()">Add</button>
+<ul id="taskList"></ul>
+</div>
+
+<div class="card">
+<h2>🔎 Product Search</h2>
+
+<input type="text" id="searchBox" placeholder="Search product..." onkeyup="filterProducts()">
+
+<ul id="productList">
+<li>Laptop</li>
+<li>Phone</li>
+<li>Headphones</li>
+<li>Keyboard</li>
+<li>Mouse</li>
+<li>Camera</li>
+<li>Smartwatch</li>
+<li>Tablet</li>
+<li>Speaker</li>
+<li>Monitor</li>
+</ul>
+
+</div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
