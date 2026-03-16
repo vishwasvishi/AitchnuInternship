@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Smart Student Utility Web App</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link href="week3.css" rel="stylesheet">
+
+
+</head>
+<body>
+    <nav class="navbar">
+    <h1 class="logo">🎓 Smart Student Utility</h1>
+    <button class="toggle-btn" onclick="toggleMode()">Toggle Mode</button>
+</nav>
+
+
+<div class="container">
+
+<div class="card">
+<h2>Grade Calculator</h2>
+<input type="text" id="studentName" placeholder="Student Name">
+<input type="number" class="marks" placeholder="Subject 1">
+<input type="number" class="marks" placeholder="Subject 2">
+<input type="number" class="marks" placeholder="Subject 3">
+<input type="number" class="marks" placeholder="Subject 4">
+<input type="number" class="marks" placeholder="Subject 5">
+<button onclick="calculateGrade()">Calculate</button>
+<button class="reset" onclick="resetGrade()">Reset</button>
+<div class="result" id="gradeResult"></div>
+</div>
+
+<div class="card">
+<h2>Palindrome Checker</h2>
+<input type="text" id="palInput" placeholder="Enter word" oninput="countChars()">
+<div class="counter" id="charCount">0 characters</div>
+<button onclick="checkPalindrome()">Check</button>
+<button class="reset" onclick="resetPalindrome()">Reset</button>
+<div class="result" id="palResult"></div>
+</div>
+
+<div class="card">
+<h2>Number Analyzer</h2>
+<input type="number" id="numInput" placeholder="Enter number">
+<button onclick="analyzeNumber()">Analyze</button>
+<button class="reset" onclick="resetNumber()">Reset</button>
+<div class="result" id="numResult"></div>
+<div class="result" id="loopResult"></div>
+</div>
+
+
+<div class="card">
+<h2>Login Validation</h2>
+<input type="text" id="username" placeholder="Username">
+<input type="password" id="password" placeholder="Password">
+<button onclick="login()">Login</button>
+<button class="reset" onclick="resetLogin()">Reset</button>
+<div class="result" id="loginResult"></div>
+</div>
+
+</div>
+
+<script src="week3.js"></script>
+
+</body>
+</html>
